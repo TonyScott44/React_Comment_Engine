@@ -1,0 +1,30 @@
+{
+  "name": "React_Comment_Engine",
+  "version": "1.0.0",
+  "description": "Built with MongoDB, Express.js, React, and Node.js, this single-page application provides an interface where users can create comments and view a list of previously created comments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently -n 'server, client' -c 'cyan,green' \"nodemon server.js\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyScott44/React_Comment_Engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyScott44/React_Comment_Engine/issues"
+  },
+  "homepage": "https://github.com/TonyScott44/React_Comment_Engine#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0"
+  }
+}
